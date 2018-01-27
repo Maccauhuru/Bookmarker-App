@@ -5,6 +5,6 @@ App uses Local Storage to store the bookmarks
 
 ## Technologies used
 
-+JavaScript / ES6
-+Bootstrap
++ES2016
++Bootstrap3
 +HTML5 localStorage
