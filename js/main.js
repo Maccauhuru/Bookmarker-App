@@ -1,5 +1,5 @@
 /*jshint esversion:6 */
-var myForm = document.getElementById("myForm");
+let myForm = document.getElementById("myForm");
 
 
 const savebookmark = (e) => {
@@ -73,23 +73,23 @@ const fetchBookmarks = () => {
             '</h3>' +
             '</div>';
     }
-}
+};
 
 //validate the form input submissions before saving to localStorage
-function validateForm(siteName,siteAddress) {
+const validateForm = (siteName, siteAddress) => {
     if (!siteName || !siteAddress) {
         alert("Fields cannot be blank");
         return false;
     }
-    var expression = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
-    var regex = new RegExp(expression);
+    let expression = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
+    let regex = new RegExp(expression);
 
     if (!siteAddress.match(regex)) {
         alert("Error , please enter a valid URL");
         return false;
     }
     return true;
-}
+};
 
 
 

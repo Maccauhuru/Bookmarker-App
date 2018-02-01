@@ -2,7 +2,6 @@
 
 An application for storing website urls using ES6. 
 App uses Local Storage to store the bookmarks
-
 ## Technologies used
 
 +ES2016
